@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active" id="homeNavItem">
+                    <a class="nav-link" href="#">Home page<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="createUserNavItem">
+                    <a class="nav-link" href="#">Create User</a>
+                </li>
+                <li class="nav-item" id="secondViewNavItem">
+                    <a class="nav-link" href="#">Second View</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5" id="homeContent">
+        <h2>Home Page</h2>
+        <p>Welcome to the Home Page!</p>
+        <img src="img/XOsX.gif">
+    </div>
+
+    <div class="container mt-5" id="createUserContent" style="display: none;">
+        <h2>Create User</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="user_name">Name</label>
+                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="user_email">Email</label>
+                <input type="email" class="form-control" id="user_email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="user_password">Password</label>
+                <input type="password" class="form-control" id="user_password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <label for="user_confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="user_confirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Save</button>
+        </form>
+    </div>
+
+    <div class="container mt-5" id="secondViewContent" style="display: none;">
+        <h2>Second View</h2>
+        <p>This is the Second View.</p>
+    </div>
+    <div id="alerts-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
